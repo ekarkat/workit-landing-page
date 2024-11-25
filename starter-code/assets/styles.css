@@ -7,47 +7,175 @@
 }
 
 @font-face {
-  font-family: 'Fraunces'; /* Custom name for the font */
-  src: url('/home/honk/frontendmentor/workit-landing-page/starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype');
+  font-family: 'Fraunces';
+  src: url('fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
 }
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/manrope/Manrope-VariableFont_wght.ttf')
+}
+
+
+
+/*
+
+
+GLOBAL STYLES
+
+
+
+*/
+
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Fraunces';
 }
 
-.text-preset-1 {
+
+.container {
+  width: 95%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+p, a {
+  line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* 
+
+
+Header
+
+
+
+*/
+
+
+
+
+header {
+  background-color: var(--purple900);
+  height: 670px;
+  position: relative;
+  color: var(--white);
+  background-image: url('images/bg-pattern-1.svg'), url('images/bg-pattern-2.svg');
+  background-repeat: no-repeat;
+  background-position: -5vw 11vh, 91vw 41vh;
+}
+
+.custom-shape-divider-top {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(278% + 1.3px);
+  height: 157px;
+}
+
+.custom-shape-divider-top .shape-fill {
+  fill: var(--purple900);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.header-nav a {
+  color: var(--white);
+  transition: color .2s ease-in;
+}
+
+.header-nav a:hover {
+  color: var(--green);
+  /* cursor: pointer; */
+}
+
+.green-underline {
+  background-color: var(--green);
+  width: 100%;
+  height: 3px;
+  margin-top: 3px;
+}
+
+.header-text {
+  margin-top: 2rem;
+}
+
+.header-text h1 {
   font-size: 80px;
-  line-height: 100%;
-  letter-spacing: 0px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.text-preset-2 {
-  font-size: 56px;
-  line-height: 120%;
-  letter-spacing: 0px;
+.h1-text-underline {
+  text-decoration: underline 4px;
+  text-decoration-color: var(--green);
+  text-underline-offset: 10px;
 }
 
-.text-preset-3 {
-  font-size: 32px;
-  line-height: 120%;
-  letter-spacing: 0px;
-}
-
-.text-preset-4 {
+.header-btn {
+  margin: 2rem auto;
+  display: block;
+  background-color: var(--green);
+  color: #000000;
+  border: none;
+  height: 61px;
+  width: 161px;
   font-size: 18px;
-  line-height: 180%;
-  letter-spacing: 0px;
+  font-weight: bold;
+  transition: all .2s ease-in;
 }
 
-.text-preset-5 {
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0px;
+.header-btn:hover {
+  background-color: var(--purple900);
+  border: var(--green) 2px solid;
+  color: var(--green);
+  cursor: pointer;
 }
 
-body {
-  background-color: aqua;
+.header-phone {
+  display: block;
+  width: 746px;
+  position: absolute;
+  top: 78%;
+  left: calc((100vw - 746px)/2);
+  z-index: 5;
+  /* margin: 0 auto; */
+}
+
+.circle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
