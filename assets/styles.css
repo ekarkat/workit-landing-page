@@ -109,6 +109,7 @@ header {
   display: block;
   width: calc(278% + 1.3px);
   height: 157px;
+  z-index: 1;
 }
 
 .custom-shape-divider-top .shape-fill {
@@ -211,8 +212,10 @@ features
 
 
 .features {
-  margin: 380px 0 50px 0;
-  background-color: var(--white);
+  margin: 0 0 50px 0;
+  padding-top: 380px;
+  position: relative;
+  background-color: var(--purple100);
 }
 
 .items {
@@ -253,6 +256,27 @@ features
   font-size: 18px;
   line-height: 190%;
   max-width: 352px;
+}
+
+
+.custom-shape-divider-features {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-features svg {
+  position: relative;
+  display: block;
+  width: calc(278% + 1.3px);
+  height: 157px;
+}
+
+.custom-shape-divider-features .shape-fill {
+  fill: var(--purple100);
 }
 
 
@@ -314,6 +338,9 @@ Media query
   
 
 
+  .features {
+    padding-top: 250px;
+  }
   .items {
     width: 95%;
     max-width: 1440px;
@@ -397,8 +424,12 @@ Media query
   }
 
   .features {
-    margin: 200px 0 0 0;
+    padding-top: 200px;
     background-color: var(--white);
+  }
+
+  .custom-shape-divider-features svg {
+    height: 101px;
   }
 
   .items {
