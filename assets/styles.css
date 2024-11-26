@@ -425,7 +425,7 @@ Media query
 
   .features {
     padding-top: 200px;
-    background-color: var(--white);
+    background-color: var(--purple100);
   }
 
   .custom-shape-divider-features svg {
