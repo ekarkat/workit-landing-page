@@ -21,7 +21,12 @@
 /*
 
 
+
+
+
 GLOBAL STYLES
+
+
 
 
 
@@ -61,10 +66,17 @@ p, a {
   font-weight: 400;
 }
 
+
 /* 
 
 
+
+
+
 Header
+
+
+
 
 
 
@@ -75,7 +87,7 @@ Header
 
 header {
   background-color: var(--purple900);
-  height: 670px;
+  height: 700px;
   position: relative;
   color: var(--white);
   background-image: url('images/bg-pattern-1.svg'), url('images/bg-pattern-2.svg');
@@ -133,7 +145,7 @@ header {
 
 .header-text h1 {
   font-size: 80px;
-  width: 40%;
+  width: 500px;
   text-align: center;
   margin: 0 auto;
 }
@@ -178,4 +190,86 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+/*
+
+
+
+
+Media query
+
+
+
+
+
+*/
+
+
+
+@media screen and (max-width: 1180px) {
+  /* media query for tablet */
+
+  header {
+    height: 520px;
+  }
+  .header-phone {
+    display: block;
+    width: 520px;
+    position: absolute;
+    top: 89%;
+    left: calc((100vw - 520px)/2);
+    z-index: 5;
+    /* margin: 0 auto; */
+  }
+
+  header {
+    background-position: -18vw 11vh, 91vw 41vh;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  /* media query for phone */
+
+  .header-phone {
+    display: block;
+    width: 450px;
+    position: absolute;
+    left: calc((100vw - 450px)/2);
+    z-index: 5;
+    /* margin: 0 auto; */
+  }
+
+  header {
+    background-position: -18vw 11vh, 91vw 41vh;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  /* media query for phone */
+
+  header {
+    height: 480px;
+    background-position: -18vw 11vh, 91vw 41vh;
+  }
+
+  .header-phone {
+    display: block;
+    width: 320px;
+    position: absolute;
+    top: 98%;
+    left: calc((100vw - 320px)/2);
+    z-index: 5;
+    /* margin: 0 auto; */
+  }
+
+  .header-text h1 {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
