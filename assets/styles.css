@@ -193,6 +193,71 @@ header {
 }
 
 
+
+/*
+
+
+
+
+
+
+features
+
+
+
+
+
+*/
+
+
+
+
+.features {
+  margin: 380px 0 50px 0;
+  background-color: var(--white);
+}
+
+.items {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item > p {
+  font-family: 'Fraunces';
+  font-size: 28px;
+  border: #000000 solid 1px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  margin-bottom: 56px;
+}
+
+.item h2 {
+  font-weight: 600;
+  margin-bottom: 32px;
+  font-size: 26px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 190%;
+  max-width: 352px;
+}
+
+
 /*
 
 
@@ -216,10 +281,11 @@ Media query
   }
   .header-phone {
     display: block;
-    width: 520px;
+    width: 60%;
+    /* min-width: 500px; */
     position: absolute;
     top: 89%;
-    left: calc((100vw - 520px)/2);
+    left: calc((100vw - 60%)/2);
     z-index: 5;
     /* margin: 0 auto; */
   }
@@ -230,17 +296,70 @@ Media query
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   /* media query for phone */
 
   .header-phone {
-    width: 450px;
-    left: calc((100vw - 450px)/2);
+    width: 480px;
+    left: calc((100vw - 480px)/2);
+  }
+  .header-text h1 {
+    font-size: 80px;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
   }
 
   header {
     background-position: -18vw 11vh, 91vw 41vh;
   }
+
+  .items {
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .item > p {
+    font-family: 'Fraunces';
+    font-size: 28px;
+    border: #000000 solid 1px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 5px;
+    margin-bottom: 56px;
+    flex-shrink: 0;
+  }
+  
+  .item h2 {
+    margin-bottom: 32px;
+  }
+
+  .content {
+    margin-left: 56px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 190%;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
+
 }
 
 
@@ -265,6 +384,30 @@ Media query
   .custom-shape-divider-top svg {
     height: 101px;
   }
+
+  .features {
+    margin: 200px 0 0 0;
+    background-color: var(--white);
+  }
+
+  .items {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
+
+
 }
 
 
