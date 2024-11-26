@@ -248,26 +248,56 @@ Media query
 }
 
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
   /* media query for phone */
 
   header {
-    height: 480px;
-    background-position: -18vw 11vh, 91vw 41vh;
+    height: 450px;
+    background-image: none;
   }
 
   .header-phone {
     display: block;
-    width: 320px;
+    width: 90%;
     position: absolute;
-    top: 98%;
-    left: calc((100vw - 320px)/2);
+    top: 85%;
+    left: calc((100vw - 90%)/2);
     z-index: 5;
     /* margin: 0 auto; */
   }
 
   .header-text h1 {
-    font-size: 80px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .custom-shape-divider-top svg {
+    height: 101px;
+  }
+}
+
+
+@media screen and (max-width: 344px) {
+  /* media query for phone */
+
+  header {
+    height: 410px;
+    background-image: none;
+  }
+
+  .header-phone {
+    display: block;
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: calc((100vw - 90%)/2);
+    z-index: 5;
+    /* margin: 0 auto; */
+  }
+
+  .header-text h1 {
+    font-size: 40px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
