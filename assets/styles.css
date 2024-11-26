@@ -234,12 +234,8 @@ Media query
   /* media query for phone */
 
   .header-phone {
-    display: block;
     width: 450px;
-    position: absolute;
     left: calc((100vw - 450px)/2);
-    z-index: 5;
-    /* margin: 0 auto; */
   }
 
   header {
@@ -257,20 +253,14 @@ Media query
   }
 
   .header-phone {
-    display: block;
     width: 90%;
-    position: absolute;
     top: 85%;
     left: calc((100vw - 90%)/2);
-    z-index: 5;
-    /* margin: 0 auto; */
   }
 
   .header-text h1 {
     font-size: 50px;
     width: 100%;
-    text-align: center;
-    margin: 0 auto;
   }
   .custom-shape-divider-top svg {
     height: 101px;
@@ -287,19 +277,10 @@ Media query
   }
 
   .header-phone {
-    display: block;
-    width: 90%;
-    position: absolute;
     top: 90%;
-    left: calc((100vw - 90%)/2);
-    z-index: 5;
-    /* margin: 0 auto; */
   }
 
   .header-text h1 {
     font-size: 40px;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
   }
 }
